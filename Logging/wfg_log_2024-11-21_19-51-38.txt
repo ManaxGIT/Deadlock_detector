@@ -1,0 +1,9 @@
+
+--- New Run ---
+Date and Time: 2024-11-21 19:51:38
+Input File: input_files/in_wfg
+Cycle detected involving process 3
+Cycle detected involving process 2
+Cycle detected involving process 1
+Cycle detected involving process 0
+Deadlock detected.

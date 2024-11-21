@@ -2,29 +2,17 @@
 #include <stdbool.h>
 #include <stdlib.h>
 #include <time.h>
-#include <string.h>
-#include <sys/stat.h>
 
-#define MAX_PROCESSES 100  // Max number of processes
+#define MAX_PROCESSES 10  // Max number of processes
 
 // Function prototypes
 void detectDeadlock(int graph[MAX_PROCESSES][MAX_PROCESSES], int numProcesses, FILE *logFile);
 bool dfs(int graph[MAX_PROCESSES][MAX_PROCESSES], int numProcesses, int process, bool visited[], bool recStack[], FILE *logFile);
 
 int main(int argc, char *argv[]) {
-    if (argc < 2 || argc > 3) {
-        printf("Usage: %s [-n] <input_file>\n", argv[0]);
+    if (argc < 2) {
+        printf("Usage: %s <input_file>\n", argv[0]);
         return 1;
-    }
-
-    bool newLog = false;
-    char *inputFileName;
-
-    if (argc == 3 && strcmp(argv[1], "-n") == 0) {
-        newLog = true;
-        inputFileName = argv[2];
-    } else {
-        inputFileName = argv[1];
     }
 
     int numProcesses;
@@ -32,40 +20,21 @@ int main(int argc, char *argv[]) {
     FILE *inputFile, *logFile;
 
     // Open input file from argument
-    inputFile = fopen(inputFileName, "r");
+    inputFile = fopen(argv[1], "r");
     if (inputFile == NULL) {
         printf("Error: Unable to open input file.\n");
         return 1;
     }
 
-    // Handle logging
-    if (newLog) {
-        // Create the "Logging" folder if it doesn't exist
-        mkdir("Logging", 0777);
-
-        // Generate the log file name with datetime
-        time_t now = time(NULL);
-        struct tm *timeinfo = localtime(&now);
-        char logFileName[50];
-        strftime(logFileName, sizeof(logFileName), "Logging/wfg_log_%Y-%m-%d_%H-%M-%S.txt", timeinfo);
-
-        logFile = fopen(logFileName, "w");
-        if (logFile == NULL) {
-            printf("Error: Unable to create log file: %s\n", logFileName);
-            fclose(inputFile);
-            return 1;
-        }
-    } else {
-        // Open log file in append mode
-        logFile = fopen("detect.log", "a");
-        if (logFile == NULL) {
-            printf("Error: Unable to open or create log file.\n");
-            fclose(inputFile);
-            return 1;
-        }
+    // Open log file in append mode
+    logFile = fopen("detect.log", "a");
+    if (logFile == NULL) {
+        printf("Error: Unable to open or create log file.\n");
+        fclose(inputFile);
+        return 1;
     }
 
-    // Log run details
+    // Get the current date and time in YYYY-MM-DD hh:mm:ss format
     time_t now = time(NULL);
     struct tm *timeinfo = localtime(&now);
     char dateTime[20];
@@ -73,7 +42,7 @@ int main(int argc, char *argv[]) {
 
     fprintf(logFile, "\n--- New Run ---\n");
     fprintf(logFile, "Date and Time: %s\n", dateTime);
-    fprintf(logFile, "Input File: %s\n", inputFileName);
+    fprintf(logFile, "Input File: %s\n", argv[1]);
 
     // Read the number of processes
     fscanf(inputFile, "%d", &numProcesses);

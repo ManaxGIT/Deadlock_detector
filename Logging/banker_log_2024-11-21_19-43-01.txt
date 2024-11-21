@@ -1,0 +1,5 @@
+
+--- New Run ---
+Date and Time: 2024-11-21 19:43:01
+Input File: input_files/in_yes
+System is in deadlock. Deadlocked processes: P0 P2 P4 P5 P7 P8 

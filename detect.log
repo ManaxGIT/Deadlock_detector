@@ -91,3 +91,245 @@ Deadlock detected.
 Date and Time: 2024-11-08 07:43:01
 Input File: input files/in_wfg_no
 No deadlock detected.
+
+--- New Run ---
+Date and Time: 2024-11-08 08:18:16
+Input File: input files/in_yes
+System is in deadlock. Deadlocked processes: P0 P2 P4 P5 P7 P8 
+
+--- New Run ---
+Date and Time: 2024-11-08 08:19:22
+Input File: input_files/in_no
+No deadlock detected. Safe sequence is: P1 P3 P4 P0 P2 
+
+--- New Run ---
+Date and Time: 2024-11-08 08:19:42
+Input File: input_files/in_yes
+System is in deadlock. Deadlocked processes: P0 P2 P4 P5 P7 P8 
+
+--- New Run ---
+Date and Time: 2024-11-08 08:20:08
+Input File: input_files/in_wfg
+Cycle detected involving process 2
+Cycle detected involving process 1
+Cycle detected involving process 0
+Deadlock detected.
+
+--- New Run ---
+Date and Time: 2024-11-08 08:36:16
+Input File: input_files/in_wfg_no
+No deadlock detected.
+
+--- New Run ---
+Date and Time: 2024-11-15 07:40:14
+Input File: input_files/in_no
+No deadlock detected. Safe sequence is: P1 P3 P4 P0 P2 
+
+--- New Run ---
+Date and Time: 2024-11-15 07:41:09
+Input File: input_files/in_yes
+System is in deadlock. Deadlocked processes: P0 P2 P4 P5 P7 P8 
+
+--- New Run ---
+Date and Time: 2024-11-15 09:43:15
+Input File: input_files/in_no
+No deadlock detected. Safe sequence is: P1 P3 P4 P0 P2 
+
+--- New Run ---
+Date and Time: 2024-11-15 09:45:06
+Input File: input_files/in_no
+No deadlock detected. Safe sequence is: P0 P1 P2 P3 P4 
+
+--- New Run ---
+Date and Time: 2024-11-15 09:46:21
+Input File: input_files/in_yes
+No deadlock detected. Safe sequence is: P0 P1 P2 P3 P4 P5 P6 P7 P8 
+
+--- New Run ---
+Date and Time: 2024-11-15 09:46:39
+Input File: input_files/in_yes
+System is in deadlock. Deadlocked processes: P0 P2 P4 P5 P7 P8 
+
+--- New Run ---
+Date and Time: 2024-11-15 09:59:34
+Input File: input_files/in_no
+No deadlock detected. Safe sequence is: P0 P1 P2 P3 P4 
+
+--- New Run ---
+Date and Time: 2024-11-15 10:08:15
+Input File: input_files/in_no
+No deadlock detected. Safe sequence is: P1 P3 P4 P0 P2 
+
+--- New Run ---
+Date and Time: 2024-11-15 10:09:57
+Input File: input_files/in_yes
+System is in deadlock. Deadlocked processes: P0 P2 P4 P5 P7 P8 
+
+--- New Run ---
+Date and Time: 2024-11-15 10:12:58
+Input File: input_files/in_no
+System is in deadlock. Deadlocked processes: P0 P1 P2 P3 P4 
+
+--- New Run ---
+Date and Time: 2024-11-15 10:13:39
+Input File: input_files/in_no
+No deadlock detected. Safe sequence is: P0 P1 P2 P3 P4 
+
+--- New Run ---
+Date and Time: 2024-11-15 10:14:19
+Input File: input_files/in_no
+No deadlock detected. Safe sequence is: P0 P2 P3 P4 P1 
+
+--- New Run ---
+Date and Time: 2024-11-15 10:15:02
+Input File: input_files/in_no
+System is in deadlock. Deadlocked processes: P0 P1 P2 P3 P4 
+
+--- New Run ---
+Date and Time: 2024-11-15 10:15:59
+Input File: input_files/in_no
+No deadlock detected. Safe sequence is: P1 P3 P4 P0 P2 
+
+--- New Run ---
+Date and Time: 2024-11-15 10:16:14
+Input File: input_files/in_no
+No deadlock detected. Safe sequence is: P0 P1 P2 P3 P4 
+
+--- New Run ---
+Date and Time: 2024-11-15 10:16:41
+Input File: input_files/in_no
+No deadlock detected. Safe sequence is: P0 P2 P3 P4 P1 
+
+--- New Run ---
+Date and Time: 2024-11-15 10:22:36
+Input File: input_files/in_wfg
+Cycle detected involving process 2
+Cycle detected involving process 1
+Cycle detected involving process 0
+Deadlock detected.
+
+--- New Run ---
+Date and Time: 2024-11-15 10:24:22
+Input File: input_files/in_wfg_no
+No deadlock detected.
+
+--- New Run ---
+Date and Time: 2024-11-15 10:24:44
+Input File: input_files/in_wfg
+No deadlock detected.
+
+--- New Run ---
+Date and Time: 2024-11-21 19:13:21
+Input File: input_files/in_no
+No deadlock detected. Safe sequence is: P1 P3 P4 P0 P2 
+
+--- New Run ---
+Date and Time: 2024-11-21 19:13:36
+Input File: input_files/in_no
+No deadlock detected. Safe sequence is: P1 P3 P4 P0 P2 
+
+--- New Run ---
+Date and Time: 2024-11-21 19:15:53
+Input File: input_files/in_yes
+System is in deadlock. Deadlocked processes: P0 P2 P4 P5 P7 P8 
+
+--- New Run ---
+Date and Time: 2024-11-21 19:17:22
+Input File: input_files/in_wfg
+No deadlock detected.
+
+--- New Run ---
+Date and Time: 2024-11-21 19:17:27
+Input File: input_files/in_wfg_no
+No deadlock detected.
+
+--- New Run ---
+Date and Time: 2024-11-21 19:17:50
+Input File: input_files/in_wfg_no
+No deadlock detected.
+
+--- New Run ---
+Date and Time: 2024-11-21 19:17:52
+Input File: input_files/in_wfg
+Cycle detected involving process 2
+Cycle detected involving process 1
+Cycle detected involving process 0
+Deadlock detected.
+
+--- New Run ---
+Date and Time: 2024-11-21 19:18:06
+Input File: input_files/in_wfg
+Cycle detected involving process 2
+Cycle detected involving process 1
+Cycle detected involving process 0
+Deadlock detected.
+
+--- New Run ---
+Date and Time: 2024-11-21 19:18:32
+Input File: input_files/in_wfg
+Cycle detected involving process 2
+Cycle detected involving process 1
+Cycle detected involving process 0
+Cycle detected involving process 3
+Deadlock detected.
+
+--- New Run ---
+Date and Time: 2024-11-21 19:18:41
+Input File: input_files/in_wfg
+Cycle detected involving process 3
+Cycle detected involving process 2
+Cycle detected involving process 1
+Cycle detected involving process 0
+Deadlock detected.
+
+--- New Run ---
+Date and Time: 2024-11-21 19:29:12
+Input File: input_files/in_no
+No deadlock detected. Safe sequence is: P1 P3 P4 P0 P2 
+
+--- New Run ---
+Date and Time: 2024-11-21 19:29:18
+Input File: input_files/in_yes
+System is in deadlock. Deadlocked processes: P0 P2 P4 P5 P7 P8 
+
+--- New Run ---
+Date and Time: 2024-11-21 19:31:30
+Input File: input_files/in_wfg
+Cycle detected involving process 3
+Cycle detected involving process 2
+Cycle detected involving process 1
+Cycle detected involving process 0
+Deadlock detected.
+
+--- New Run ---
+Date and Time: 2024-11-21 19:31:34
+Input File: input_files/in_wfg_no
+No deadlock detected.
+
+--- New Run ---
+Date and Time: 2024-11-21 19:39:21
+Input File: input_files/in_no
+No deadlock detected. Safe sequence is: P1 P3 P4 P0 P2 
+
+--- New Run ---
+Date and Time: 2024-11-21 19:42:48
+Input File: input_files/in_yes
+System is in deadlock. Deadlocked processes: P0 P2 P4 P5 P7 P8 
+
+--- New Run ---
+Date and Time: 2024-11-21 19:50:36
+Input File: input_files/in_wfg
+Cycle detected involving process 3
+Cycle detected involving process 2
+Cycle detected involving process 1
+Cycle detected involving process 0
+Deadlock detected.
+
+--- New Run ---
+Date and Time: 2024-11-21 19:51:10
+Input File: input_files/in_wfg
+Cycle detected involving process 3
+Cycle detected involving process 2
+Cycle detected involving process 1
+Cycle detected involving process 0
+Deadlock detected.
